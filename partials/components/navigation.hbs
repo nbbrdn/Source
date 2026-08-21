@@ -2,12 +2,11 @@
     <div class="gh-navigation-inner gh-inner">
 
         <div class="gh-navigation-brand">
-            <a class="gh-navigation-logo is-title" href="{{@site.url}}">
+            <a class="gh-navigation-logo is-title oskolki-brand" href="{{@site.url}}" aria-label="{{@site.title}}">
                 {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}">
-                {{else}}
-                    {{@site.title}}
+                    <img class="oskolki-brand-logo" src="{{@site.logo}}" alt="" aria-hidden="true">
                 {{/if}}
+                <span class="oskolki-brand-title">{{@site.title}}</span>
             </a>
             {{> "search-toggle"}}
             <button class="gh-burger gh-icon-button" aria-label="{{t "Menu"}}">

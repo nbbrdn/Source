@@ -139,3 +139,77 @@
         display: none;
     }
 }
+
+/* --------------------------------------------------------------------------
+ * Header branding
+ * ----------------------------------------------------------------------- */
+
+.oskolki-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.oskolki-brand .oskolki-brand-logo {
+    width: 42px;
+    height: 42px;
+    max-width: 42px;
+    max-height: 42px;
+    object-fit: contain;
+    flex: 0 0 42px;
+}
+
+.oskolki-brand-title {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* --------------------------------------------------------------------------
+ * Minimal footer
+ * ----------------------------------------------------------------------- */
+
+.oskolki-footer {
+    margin-top: 72px;
+    padding: 0;
+    background: transparent;
+}
+
+.oskolki-footer-inner {
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    border-top: 1px solid var(--color-border);
+}
+
+.oskolki-footer-copyright {
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--color-secondary-text);
+}
+
+@media (max-width: 767px) {
+    .oskolki-brand {
+        gap: 9px;
+    }
+
+    .oskolki-brand .oskolki-brand-logo {
+        width: 36px;
+        height: 36px;
+        max-width: 36px;
+        max-height: 36px;
+        flex-basis: 36px;
+    }
+
+    .oskolki-brand-title {
+        font-size: 1.75rem;
+    }
+
+    .oskolki-footer {
+        margin-top: 52px;
+    }
+}
