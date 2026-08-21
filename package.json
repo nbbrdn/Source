@@ -1,8 +1,7 @@
 {
-    "name": "source",
-    "description": "A default theme for the Ghost publishing platform",
-    "demo": "https://source.ghost.io",
-    "version": "1.7.2",
+    "name": "oskolki-source",
+    "description": "A long-form genealogy research journal theme based on Ghost Source",
+    "version": "0.1.0",
     "engines": {
         "ghost": ">=5.0.0",
         "node": ">=22.12.0"
@@ -22,9 +21,9 @@
     },
     "packageManager": "pnpm@11.22.0",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org/"
+        "name": "Nikolay Bayborodin",
+        "email": "dev@oskolkicelogo.ru",
+        "url": "https://oskolkicelogo.ru"
     },
     "gpm": {
         "type": "theme",
@@ -38,18 +37,12 @@
         "theme",
         "ghost-theme"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TryGhost/Source.git"
-    },
-    "bugs": "https://github.com/TryGhost/Source/issues",
-    "contributors": "https://github.com/TryGhost/Source/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.9.1",
         "@tryghost/theme-translations": "0.0.22",
         "autoprefixer": "10.5.4",
         "beeper": "2.1.0",
-        "cssnano": "8.0.6",
+        "cssnano": "8.0.5",
         "gscan": "6.4.2",
         "gulp": "5.0.1",
         "gulp-concat": "2.6.1",
@@ -96,7 +89,7 @@
                     "Logo on the left",
                     "Stacked"
                 ],
-                "default": "Logo in the middle"
+                "default": "Logo on the left"
             },
             "site_background_color": {
                 "type": "color",
@@ -117,7 +110,7 @@
                     "Elegant serif",
                     "Consistent mono"
                 ],
-                "default": "Modern sans-serif"
+                "default": "Elegant serif"
             },
             "body_font": {
                 "type": "select",
@@ -145,7 +138,7 @@
                     "Off"
                 ],
                 "description": "Landing is recommended for all sites, Highlight & Magazine for those with more content",
-                "default": "Landing",
+                "default": "Off",
                 "group": "homepage"
             },
             "header_text": {
@@ -184,7 +177,7 @@
             },
             "show_author": {
                 "type": "boolean",
-                "default": true,
+                "default": false,
                 "group": "homepage"
             },
             "show_publish_date": {
